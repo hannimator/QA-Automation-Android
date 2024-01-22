@@ -12,7 +12,8 @@ This test uses webdriverio, mocha, appium and uiautomator2.
 
 ### UI Tests
 
-1. Run `npm install` in `QA-Automation-Android\hannahTest` 
+1. Run `npm install` in `QA-Automation-Android\hannahTest`
+1. Add `C:\Users\[youruser]\AppData\Local\Android\Sdk` to environment variables Path and ANDROID_HOME
 1. Ensure a device emulator is running in android studio (the tests will run against this)
 1. Run `npx wdio run ./wdio.conf.js` 
 
