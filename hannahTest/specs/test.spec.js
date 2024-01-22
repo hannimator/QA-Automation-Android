@@ -6,6 +6,7 @@ describe("the apps main screen", function () {
       const button = await $(`android=${buttonSelector}`)
       const labelSelector = 'new UiSelector().resourceId("tag_label")'
       const label =  await $(`android=${labelSelector}`)
+      await expect(label).toHaveText('0');
       await button.click();
       await expect(label).toHaveText('1');
       await button.click();
