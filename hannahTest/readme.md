@@ -20,6 +20,7 @@ This test uses webdriverio, mocha, appium and uiautomator2.
 Note: Appium may not stop running correctly so the process may need to be killed on the port.
 
 ## Issues
-Use release tags to swap between release v1.0 and v0.9
-The issue noted is that the label value does not increment from 1 to 2, instead jumps straight to MAX.
-This can be easily noted when comparing the release pull requests.
+##### Bug found in v0.9
+The label value does not increment from 1 to 2, instead jumps straight to MAX from 1 when the button is clicked.
+##### MAX label value can be achieved from any label state
+The acceptance criteria states that the label should be set to MAX when the button is clicked and the label is set to 2. However due to the else statement, the label could be in any state (for example 5) and be set to MAX upon button click. Currently the issue won't be surfaced due to the simplicity of the app however may become an issue as the app is expanded upon. 
